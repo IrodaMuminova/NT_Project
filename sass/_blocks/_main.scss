@@ -1,16 +1,161 @@
 .main_row-1 {
   .choose_car-theme {
     text-align: center;
+    color: #000;
   }
   .choose_car-text {
-    text-align: center;
     width: 575px;
-    height: 48px;
-
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    text-align: center;
+    margin: auto;
+    color: #555;
+  }
+}
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4px;
+  .main_btn {
+    @include main_buttos;
+    transition: 0.2s;
+    margin: 10px;
+    color: #000;
+  }
+  .main_btn:hover {
+    background: #299764;
+    color: #fff;
+  }
+}
+.main_cars {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.main_card {
+  background: #f5f5f5;
+  border-radius: 16px;
+  width: 387px;
+  padding: 30px 24px;
+  transition: 0.4s;
+  .cars-name {
+    font-weight: 600;
+    color: #000;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .cars-tip {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #555;
+  }
+  .cars-infarmation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 24px;
+    grid-column-gap: 60px;
+    margin-top: 16px;
+    margin-right: 89px;
+  }
+}
+.main_card:hover {
+  .cars-name {
+    color: #fff;
+  }
+  .cars-tip {
+    color: #fff;
+  }
+  background: #299764;
+  color: #fff;
+}
+.main_cars-agein {
+  margin-top: 40px;
+  margin-bottom: 160px;
+}
+.single_btn {
+  display: flex;
+  justify-content: center;
+  button {
+    @include main_buttos;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  button:hover {
+    background: #299764;
+    color: #fff;
+  }
+}
+
+
+.main_row-3{
+  background: #F5F5F5;
+  height: 679px;
+  display: grid;
+  align-items: center;
+}
+.main_col-3{
+  display: flex;
+  justify-content: space-between;
+  height: 479px;
+  background: #fff;
+  border-radius: 20px;
+}
+.main_card-3__left {
+  padding: 70px;
+  width: 390px;
+  .google {
+    height: 12px;
+  }
+  .fromGoogle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4285f4;
+  }
+  .main_3-heading {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 50px;
+    color: #000000;
+  }
+  .rgb-line {
+    width: 330px;
+    margin: 30px 0;
+    height: 2px;
+    background: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);
+  }
+  .insta_text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+    margin-bottom: 16px;
+  }
+  .btn_istagram{
+    @include main_buttos;
+    border-top: 2px solid ;
+  } 
+  .btn_istagram:hover{
+    // background: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);
+  }
+}
+
+.main_card-3__right{
+  border: 1px solid;
+  width: 730px;
+  display: grid;
+  align-items: center;
+  background-color: #299764;
+  margin-right: -10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  .carousel-size{
+    height: 333px;
+    border: 1px solid red;
   }
 }
