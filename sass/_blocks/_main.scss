@@ -2,6 +2,10 @@
   .choose_car-theme {
     text-align: center;
     color: #000;
+    width: 568px;
+    margin: auto;
+    font-weight: 600;
+    font-size: 36px;
   }
   .choose_car-text {
     width: 575px;
@@ -10,6 +14,7 @@
     text-align: center;
     margin: auto;
     color: #555;
+    width: 568px;
   }
 }
 .buttons {
@@ -29,16 +34,20 @@
   }
 }
 .main_cars {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .main_card {
   background: #f5f5f5;
   border-radius: 16px;
-  width: 387px;
+  width: 30%;
+  margin: 10px;
   padding: 30px 24px;
   transition: 0.4s;
+
+  img {
+    margin-top: 16px;
+  }
   .cars-name {
     font-weight: 600;
     color: #000;
@@ -51,6 +60,7 @@
     line-height: 20px;
     color: #555;
   }
+
   .cars-infarmation {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -90,14 +100,13 @@
   }
 }
 
-
-.main_row-3{
-  background: #F5F5F5;
+.main_row-3 {
+  background: #f5f5f5;
   height: 679px;
   display: grid;
   align-items: center;
 }
-.main_col-3{
+.main_col-3 {
   display: flex;
   justify-content: space-between;
   height: 479px;
@@ -127,7 +136,13 @@
     width: 330px;
     margin: 30px 0;
     height: 2px;
-    background: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);
+    background: linear-gradient(
+      90deg,
+      #ea4335 19.83%,
+      #fbbc05 65%,
+      #34a853 82.29%,
+      #4285f4 100%
+    );
   }
   .insta_text {
     font-weight: 500;
@@ -136,16 +151,16 @@
     color: #555555;
     margin-bottom: 16px;
   }
-  .btn_istagram{
+  .btn_istagram {
     @include main_buttos;
-    border-top: 2px solid ;
-  } 
-  .btn_istagram:hover{
+    border-top: 2px solid;
+  }
+  .btn_istagram:hover {
     // background: linear-gradient(90deg, #EA4335 19.83%, #FBBC05 65%, #34A853 82.29%, #4285F4 100%);
   }
 }
 
-.main_card-3__right{
+.main_card-3__right {
   border: 1px solid;
   width: 730px;
   display: grid;
@@ -154,8 +169,43 @@
   margin-right: -10px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  .carousel-size{
+  .carousel-size {
     height: 333px;
-    border: 1px solid red;
+  }
+}
+
+.car_1 {
+  background: #fff;
+  width: 420px;
+  margin: auto;
+  border-radius: 16px;
+  padding: 24px;
+  .user-massage {
+    margin-top: 4px;
+  }
+}
+.car_heading {
+  display: flex;
+  justify-content: space-between;
+  .head-left {
+    display: flex;
+    img {
+      height: 45px;
+    }
+    div {
+      margin-left: 12px;
+    }
+    .user_email {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #555;
+    }
+    .user-name {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+    }
   }
 }

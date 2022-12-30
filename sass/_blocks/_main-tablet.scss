@@ -1,0 +1,19 @@
+@media only screen and (max-width: 795px) {
+  .main_cars {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: auto;
+  }
+  .main_col-2{
+      margin: auto;
+  }   
+  .main_card{
+      width: 45%;
+  }
+  .main_row-2{
+      margin: auto;
+  }
+  .main_col-3{
+      flex-wrap: wrap;
+  }
+}
